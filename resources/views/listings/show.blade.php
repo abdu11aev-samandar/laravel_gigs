@@ -45,6 +45,14 @@
                         ><i class="fa-solid fa-globe"></i> Visit
                             Website</a
                         >
+
+                        <a
+                            href="/listings/{{ $listing->id }}/edit"
+                            target="_blank"
+                            class="block bg-laravel text-white py-2 rounded-xl hover:opacity-80"
+                        >
+                            <i class="fa-solid fa-pencil"></i> Edit
+                        </a>
                     </div>
                 </div>
             </div>
