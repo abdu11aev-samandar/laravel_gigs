@@ -53,6 +53,15 @@
                         >
                             <i class="fa-solid fa-pencil"></i> Edit
                         </a>
+
+                        <form  class="block bg-black text-white py-2 rounded-xl hover:opacity-80"
+                               action="/listing/{{ $listing->id }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="text-red-500">
+                                <i class="fa-solid fa-trash"> Delete</i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
